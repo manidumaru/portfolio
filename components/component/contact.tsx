@@ -4,16 +4,21 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image";
+import linkedin from '../../public/assets/icons/linkedin.svg';
+import github from '../../public/assets/icons/github.svg';
+import insta from '../../public/assets/icons/insta.svg';
+import twitter from '../../public/assets/icons/twitter.svg';
 
 export function Contact () {
     return (
-        <section className="flex justify-center items-center w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800" id="contact">
+        <section className="flex justify-center items-center bg-background-secondary w-full py-12 md:py-24 lg:py-32" id="contact">
         <div className="container px-4 md:px-6">
           <div className="space-y-3">
-            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Contact</div>
+            <div className="inline-block rounded-lg bg-background-accent text-white px-3 py-1 text-sm">Contact</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Feel free to reach out to me for any inquiries or collaboration opportunities.
+            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
+              Feel free to reach out to me for any inquiries or collaboration opportunities. 
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -36,26 +41,24 @@ export function Contact () {
                 </Button>
               </CardContent>
             </Card>
-            <div className="flex flex-col items-start gap-4">
+            <div className="flex flex-col text-muted-foreground items-start gap-4">
               <div className="flex items-center gap-3">
-                <MailIcon className="h-6 w-6 text-gray-500 dark:text-gray-400" />
-                <div className="text-gray-500 dark:text-gray-400">john.doe@example.com</div>
+                <MailIcon className="h-6 w-6" />
+                <div>manidumaru36@gmail.com</div>
               </div>
               <div className="flex items-center gap-3">
-                <PhoneIcon className="h-6 w-6 text-gray-500 dark:text-gray-400" />
-                <div className="text-gray-500 dark:text-gray-400">+1 (123) 456-7890</div>
+                <PhoneIcon className="h-6 w-6" />
+                <div className="">+977 9861494401</div>
               </div>
               <div className="flex items-center gap-3">
-                <LocateIcon className="h-6 w-6 text-gray-500 dark:text-gray-400" />
-                <div className="text-gray-500 dark:text-gray-400">123 Main Street, Anytown USA</div>
-              </div>
-              <div className="flex items-center gap-3">
-                <LinkIcon className="h-6 w-6 text-gray-500 dark:text-gray-400" />
-                <div className="text-gray-500 dark:text-gray-400">
-                  <Link className="underline" href="#">
-                    www.example.com
-                  </Link>
-                </div>
+                <LocateIcon className="h-6 w-6" />
+                <div className="">Bhaktapur, Nepal</div>
+              </div>              
+              <div className="flex">
+                <Link className="mr-2" href="https://www.linkedin.com/in/mani-dumaru-2b3641235/"><Image src={linkedin} alt="Linkedin" height={30}></Image></Link>
+                <Link className="mr-2" href="https://github.com/manidumaru"><Image src={github} alt="Github" height={30}></Image></Link>
+                <Link className="mr-2" href="https://www.instagram.com/_mdr01/"><Image src={insta} alt="Linkedin" height={30}></Image></Link>
+                <Link className="mr-2" href="https://x.com/MDR0608"><Image src={twitter} alt="Linkedin" height={30}></Image></Link>
               </div>
             </div>
           </div>
