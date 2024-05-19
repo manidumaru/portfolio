@@ -1,9 +1,11 @@
 import { CardContent, Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import Link from "next/link";
 import devote from '../../public/assets/clash.jpg';
 import baghchal from '../../public/assets/chess.jpg';
 import eventhub from '../../public/assets/event.jpg';
+import { ArrowRight } from "lucide-react";
 
 export function Projects() {
   return (
@@ -73,6 +75,12 @@ export function Projects() {
             </CardContent>
           </Card>
         </div>
+        <Link href="#">
+          <div className="pt-16 flex justify-center items-center gap-2 hover:text-background-accent">
+            <span>Find more</span>
+            <ArrowRight height={16} width={16}/>
+          </div>
+        </Link>
       </div>
     </section>
   );
