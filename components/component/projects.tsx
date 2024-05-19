@@ -17,7 +17,7 @@ export function Projects() {
             Projects
           </div>
           <h2 className="text-3xl text-label-foreground font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            My Recent Work
+            Projects
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Check out some of the projects I have worked on.
