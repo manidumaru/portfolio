@@ -9,6 +9,7 @@ import linkedin from '../../public/assets/icons/linkedin.svg';
 import github from '../../public/assets/icons/github.svg';
 import insta from '../../public/assets/icons/insta.svg';
 import twitter from '../../public/assets/icons/twitter.svg';
+import facebook from '../../public/assets/icons/facebook.svg';
 
 export function Contact () {
     return (
@@ -57,8 +58,9 @@ export function Contact () {
               <div className="flex">
                 <Link className="mr-2" href="https://www.linkedin.com/in/mani-dumaru-2b3641235/"><Image src={linkedin} alt="Linkedin" height={30}></Image></Link>
                 <Link className="mr-2" href="https://github.com/manidumaru"><Image src={github} alt="Github" height={30}></Image></Link>
-                <Link className="mr-2" href="https://www.instagram.com/_mdr01/"><Image src={insta} alt="Linkedin" height={30}></Image></Link>
-                <Link className="mr-2" href="https://x.com/MDR0608"><Image src={twitter} alt="Linkedin" height={30}></Image></Link>
+                <Link className="mr-2" href="https://www.instagram.com/_mdr01/"><Image src={insta} alt="Instagram" height={30}></Image></Link>
+                <Link className="mr-2" href="https://x.com/MDR0608"><Image src={twitter} alt="Twitter" height={30}></Image></Link>
+                <Link className="mr-2" href="https://x.com/MDR0608"><Image src={facebook} alt="Facebook" height={30}></Image></Link>
               </div>
             </div>
           </div>
