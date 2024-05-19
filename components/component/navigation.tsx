@@ -48,25 +48,38 @@ export function Navigation() {
       </nav>
       <Sheet>
         <SheetTrigger asChild>
-          <Button className="md:hidden" size="icon" variant="outline">
-            <MenuIcon className="w-6 h-6" />
+          <Button
+            className="bg-label-foreground hover:bg-label-foreground md:hidden"
+            size="icon"
+            variant="outline"
+          >
+            <MenuIcon className="w-6 h-6 text-background-main" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
         <SheetContent side="right">
           <div className="grid gap-4 p-4">
-            <Link className="font-medium hover:underline" href="#">
+          <label className="inline-flex items-center justify-center cursor-pointer">
+              <input
+                type="checkbox"
+                value=""
+                className="sr-only peer"
+                onChange={toggleHandler}
+              />
+              <div className="relative w-11 h-6 bg-black rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-white peer-checked:after:bg-black"></div>
+            </label>
+            <Link className="font-medium text-label-foreground" href="#">
               Home
             </Link>
-            <Link className="font-medium hover:underline" href="#">
+            <Link className="font-medium text-label-foreground" href="#">
               About
             </Link>
-            <Link className="font-medium hover:underline" href="#">
+            <Link className="font-medium text-label-foreground" href="#">
               Portfolio
             </Link>
-            <Link className="font-medium hover:underline" href="#contact">
+            <Link className="font-medium text-label-foreground" href="#contact">
               Contact
-            </Link>
+            </Link>            
           </div>
         </SheetContent>
       </Sheet>
