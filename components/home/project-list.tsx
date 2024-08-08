@@ -14,6 +14,7 @@ import ShimmerButton from "../magicui/shimmer-button";
 import { Badge } from "../ui/badge";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { Button } from "../ui/moving-border";
 
 const ProjectData = [
   {
@@ -83,11 +84,12 @@ export function ProjectList() {
               </div>
             </ModalContent>
             <ModalFooter className="gap-4">
-              <Link href="/projects" className="flex gap-4 items-center">Find more <ArrowRight size={18} /></Link>
+              <Link href="/projects" className="flex gap-4 items-center">Explore <ArrowRight size={18} /></Link>
             </ModalFooter>
           </ModalBody>
         </Modal>
       ))}
+      
     </div>
   );
 }

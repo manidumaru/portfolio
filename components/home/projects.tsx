@@ -10,7 +10,7 @@ export default function Projects() {
           text="FEATURED PROJECTS"
           className="absolute -top-[18px] md:left-10 text-3xl md:-top-6 md:text-5xl text-muted-foreground/40 font-extrabold"
         />
-      <ProjectList />
+      <ProjectList />      
       <ShootingStars />
       <StarsBackground />
     </div>

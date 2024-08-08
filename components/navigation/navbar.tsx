@@ -49,7 +49,7 @@ export function Navbar() {
   return (
     // <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
     <TooltipProvider>
-      <Dock direction="middle" className="border-0 z-[100]">
+      <Dock direction="middle" className="border-0">
         {DATA.map((item) => (
           <DockIcon key={item.name}>
             <Tooltip>
@@ -69,18 +69,7 @@ export function Navbar() {
               </TooltipContent>
             </Tooltip>
           </DockIcon>
-        ))}
-        <Separator orientation="vertical" className="h-full bg-foreground" />
-        <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <ThemeControler />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Theme</p>
-            </TooltipContent>
-          </Tooltip>
-        </DockIcon>
+        ))}        
       </Dock>
     </TooltipProvider>
   );

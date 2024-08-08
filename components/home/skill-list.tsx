@@ -15,7 +15,7 @@ const data = [
         icon: javascript
     },
     {
-        name: "React",
+        name: "React.js",
         icon: react
     },
     {
@@ -27,7 +27,7 @@ const data = [
         icon: flutter
     },
     {
-        name: "Postgres",
+        name: "PostgreSQL",
         icon: postgres
     },
     {

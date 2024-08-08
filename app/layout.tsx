@@ -31,7 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative">
-            <div className="fixed z-50 bottom-5 left-1/2 -translate-x-1/2">
+            <div className="fixed z-[9999] bottom-5 left-1/2 -translate-x-1/2 shadow-lg">
               <Navbar />
             </div>
 

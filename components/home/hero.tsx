@@ -3,6 +3,7 @@
 import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
 import { Button } from "../ui/moving-border";
+import { ArrowDown } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -20,8 +21,10 @@ export default function HeroSection() {
         >
           <div className="flex flex-col  items-center justify-center gap-6 p-4 max-w-7xl mx-auto relative z-10  w-full pt-20 md:pt-0">
             <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-              <span className="text-3xl md:text-4xl lg:text-6xl">Mani Dumaru</span> <br /> Web
-              Developer.
+              <span className="text-3xl md:text-4xl lg:text-6xl">
+                Mani Dumaru
+              </span>{" "}
+              <br /> Web Developer.
             </h1>
             <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto tracking-normal">
               I&apos;m a web developer from Nepal focused on the flashy side of
@@ -30,13 +33,16 @@ export default function HeroSection() {
             </p>
             <Button
               borderRadius="1.75rem"
-              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 tracking-wide"
+              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 tracking-wide flex gap-2"
             >
-              Find More
+              Resume{" "}
+              <span>
+                <ArrowDown size={14} />
+              </span>
             </Button>
           </div>
-        </motion.h1>        
-      </LampContainer>      
+        </motion.h1>
+      </LampContainer>
     </div>
   );
 }
