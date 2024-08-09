@@ -4,6 +4,7 @@ import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
 import { Button } from "../ui/moving-border";
 import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -31,15 +32,17 @@ export default function HeroSection() {
               things. I am passionate about building excellent software with
               clean and user friendly experience.
             </p>
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 tracking-wide flex gap-2"
-            >
-              Resume{" "}
-              <span>
-                <ArrowDown size={14} />
-              </span>
-            </Button>
+            <Link href={"/files/resume.pdf"} target="_blank">
+              <Button
+                borderRadius="1.75rem"
+                className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 tracking-wide flex gap-2"
+              >
+                Resume{" "}
+                <span>
+                  <ArrowDown size={14} />
+                </span>
+              </Button>
+            </Link>
           </div>
         </motion.h1>
       </LampContainer>
