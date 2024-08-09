@@ -21,16 +21,16 @@ export default function EachProject({
 }) {
   return (
     <div className="-mx-5 md:mx-0 flex flex-col gap-2">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
         <div className="flex flex-col">
           <p className="text-xl md:text-2xl">{project.name}</p>
           <p className="text-sm md:text-lg text-muted-foreground">
             {project.tagline}
           </p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           {project.techStack.map((tech) => (
-            <Badge key={tech} className="h-6" variant={"secondary"}>{tech}</Badge>
+            <Badge key={tech} className="h-6 text-xs md:text-sm" variant={"secondary"} >{tech}</Badge>
           ))}
         </div>
       </div>
