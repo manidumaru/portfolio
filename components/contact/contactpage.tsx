@@ -12,8 +12,9 @@ export default function ContactPage() {
   return (
     <div className="pt-10 md:pt-20 h-svh flex flex-col items-center mb-80 md:mb-0">
       <span className="text-3xl md:text-5xl font-extrabold">Feel free to Contact</span>
+      <span className="mt-2 text-center text-xs md:text-lg">I’m always open to discussing new ideas and projects.</span>
       <NeonGradientCard className="flex justify-center mt-10 md:mt-16 w-auto h-auto mx-4">
-        <div className="flex flex-col gap-4 md:flex-row mx-2">
+        <div className="flex flex-col gap-4 md:flex-row -mx-3 md:p-4">
           <ContactForm />          
           <Separator orientation="vertical" className="bg-red-500 mx-6 z-[9999]" />
           <ContactInfromation />
